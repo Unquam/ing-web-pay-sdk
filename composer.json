@@ -1,0 +1,35 @@
+{
+  "name": "unquam/ing-web-pay-sdk",
+  "description": "Laravel SDK for ING Web Pay integration. Provides a clean and simple interface for initiating and handling payments through the ING Web Pay system.",
+  "type": "library",
+  "license": "MIT",
+  "version": "1.0.0",
+  "keywords": ["payment", "api", "gateway integration", "secure payments", "sdk", "laravel", "php"],
+  "authors": [
+    {
+      "name": "Diam / Unquam",
+      "email": "diamik@gmail.com",
+      "homepage": "https://github.com/Unquam",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "illuminate/support": "^8.0|^9.0|^10.0",
+    "guzzlehttp/guzzle": "^7.2",
+    "ext-iconv": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Unquam\\IngWebPaySdk\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Unquam\\IngWebPaySdk\\Providers\\IngWebPayServiceProvider"
+      ]
+    }
+  },
+  "prefer-stable": true
+}
