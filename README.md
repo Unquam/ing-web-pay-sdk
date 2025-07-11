@@ -19,7 +19,7 @@ This SDK provides a simple PHP integration with the ING WebPay payment gateway. 
 You can install the SDK via Composer (assuming it's published on Packagist):
 
 ```bash
-composer require your-vendor/ing-webpay-sdk
+composer require unquam/ing-web-pay-sdk
 ```
 
 If you're using this SDK as a Laravel package, publish the configuration file using Artisan:
