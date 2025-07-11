@@ -29,7 +29,7 @@ class IngWebPay
     protected ?string $_language = null;
     protected ?string $_certificate = null;
     protected ?int $_test_indicator = 0;
-    protected array $convertTable = ConvertTable::$map;
+    protected array $convertTable = ConvertTable::MAP;
     protected array $countryCodeMap;
 
     /**

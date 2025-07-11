@@ -4,7 +4,7 @@ namespace Unquam\IngWebPaySdk\Constants;
 
 class ConvertTable
 {
-    public static array $map = [
+    public const MAP = [
         '&amp;' => 'and',
         '©' => 'c',
         '®' => 'r',
