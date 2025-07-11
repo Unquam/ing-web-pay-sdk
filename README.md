@@ -18,6 +18,8 @@ This SDK provides a simple PHP integration with the ING WebPay payment gateway. 
 
 You can install the SDK via Composer:
 
+> SDK version: **v1.0.0**
+
 ```bash
 composer require unquam/ing-web-pay-sdk
 ```
@@ -31,6 +33,12 @@ php artisan vendor:publish --provider="Unquam\IngWebPaySdk\IngWebPayServiceProvi
 
 This SDK supports Composer autoloading.  
 If you installed the package via Composer, it will be automatically loaded by Composer's autoloader, so you can use the classes without manual `require` or `include`.
+
+If you're not using Laravel, make sure to include Composer's autoload:
+```php
+require __DIR__ . '/vendor/autoload.php';
+```
+
 
 ## Configuration File Example (`config/ing-web-pay.php`)
 
@@ -204,3 +212,22 @@ These cards are **only valid in the test environment** provided by ING WebPay.
 > The authors are not responsible for any damages or losses arising from its use.
 > 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## 💼 Commercial Support & Development
+
+This SDK is actively maintained and ready to grow.
+
+If you're using ING WebPay in your PHP/Laravel project and want:
+
+- 🔧 **Help with integration** into your application
+- 📈 **Custom features or business-specific extensions**
+- 🛠️ **Ongoing maintenance, support or updates**
+- 🤝 **Private commercial collaboration**
+
+Feel free to [open an issue](https://github.com/Unquam/ing-web-pay-sdk/issues)  
+or contact us directly at **[diamik@gmail.com](mailto:diamik@gmail.com)**
+
+We’re open to partnerships and happy to evolve this SDK to better fit real-world use cases.
+
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+![Packagist Version](https://img.shields.io/packagist/v/unquam/ing-web-pay-sdk)
