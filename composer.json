@@ -3,7 +3,6 @@
   "description": "Laravel SDK for ING Web Pay integration. Provides a clean and simple interface for initiating and handling payments through the ING Web Pay system.",
   "type": "library",
   "license": "MIT",
-  "version": "1.0.0",
   "keywords": ["payment", "api", "gateway integration", "secure payments", "sdk", "laravel", "php"],
   "authors": [
     {
