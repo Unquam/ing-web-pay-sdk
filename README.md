@@ -1,3 +1,8 @@
+# IngWebPay SDK for PHP
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](...)
+[![Packagist Version](https://img.shields.io/packagist/v/unquam/ing-web-pay-sdk)](...)
+
 ![ING Logo](https://ing.ro/dam/ingro/images/logo.svg)
 
 # IngWebPay SDK for PHP
@@ -228,6 +233,3 @@ Feel free to [open an issue](https://github.com/Unquam/ing-web-pay-sdk/issues)
 or contact us directly at **[diamik@gmail.com](mailto:diamik@gmail.com)**
 
 We’re open to partnerships and happy to evolve this SDK to better fit real-world use cases.
-
-![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
-![Packagist Version](https://img.shields.io/packagist/v/unquam/ing-web-pay-sdk)
