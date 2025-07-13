@@ -5,7 +5,6 @@
 
 ![ING Logo](https://ing.ro/dam/ingro/images/logo.svg)
 
-# IngWebPay SDK for PHP
 
 This SDK provides a simple PHP integration with the ING WebPay payment gateway. It allows you to initialize payment orders, send requests, and check order statuses.
 
