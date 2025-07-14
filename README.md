@@ -61,15 +61,18 @@ return [
 This will copy the default config file to your Laravel project's config/ing-web-pay.php, where you can customize credentials and URLs.
 
 ## Configuration
-| Key              | Description                                        | Example                                |
-| ---------------- |----------------------------------------------------| -------------------------------------- |
-| `username`       | Your IngWebPay username                            | `"myuser"`                             |
-| `password`       | Your IngWebPay password                            | `"mypassword"`                         |
-| `return_url`     | URL where the user will be redirected after payment | `"https://your-site.com/return"`       |
-| `post_action`    | WebPay payment initiation URL                      | `env('ING_TEST_INDICATOR', 1) ? 'https://securepay-uat.ing.ro/mpi_uat/rest/register.do' : 'https://securepay.ing.ro/mpi/rest/register.do'`  |
-| `order_status`   | WebPay order status query URL                      | `env('ING_TEST_INDICATOR', 1) ? 'https://securepay-uat.ing.ro/mpi_uat/rest/getOrderStatusExtended.do' : 'https://securepay.ing.ro/mpi/rest/getOrderStatus.do'` |
-| `certificate`    | Optional path to SSL certificate for verification  | `"/path/to/ChainBundle2.crt"`                  |
-| `test_indicator` | Set to 1 to disable SSL verification for testing   | `1` (test) or `0` (production)         |
+| Key              | Description                                         | Example                                                                                                                                                        |
+|------------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `username`       | Your IngWebPay username                             | `"myuser"`                                                                                                                                                     |
+| `password`       | Your IngWebPay password                             | `"mypassword"`                                                                                                                                                 |
+| `return_url`     | URL where the user will be redirected after payment | `"https://your-site.com/return"`                                                                                                                               |
+| `post_action`    | WebPay payment initiation URL                       | `env('ING_TEST_INDICATOR', 1) ? 'https://securepay-uat.ing.ro/mpi_uat/rest/register.do' : 'https://securepay.ing.ro/mpi/rest/register.do'`                     |
+| `order_status`   | WebPay order status query URL                       | `env('ING_TEST_INDICATOR', 1) ? 'https://securepay-uat.ing.ro/mpi_uat/rest/getOrderStatusExtended.do' : 'https://securepay.ing.ro/mpi/rest/getOrderStatus.do'` |
+| `certificate`    | Optional path to SSL certificate for verification   | `"/path/to/ChainBundle2.crt"`                                                                                                                                  |
+| `protocol`       | Set protocol http or https                          | `env('APP_PROTOCOL', 'https://') `                                                                                                                             |
+| `check_amount`   | Check amount                                        | `1` (check amount) or `0` (otherwise)                                                                                                                          |
+| `language`       | Choise language                                     | `ro` for Romanian `en` for English                                                                                                                             |
+| `test_indicator` | Set to 1 to disable SSL verification for testing    | `1` (test) or `0` (production)                                                                                                                                 |
 
 ## Environment Variables (.env)
 
