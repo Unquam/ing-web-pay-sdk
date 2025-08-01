@@ -42,7 +42,7 @@ class IngWebPayGateway
             $this->ingWebPay->setDescription($data['description'] ?? '');
 
             // Set customer details if provided
-            if (!empty($data['customerDetails'])) {
+            if (isset($data['customerDetails']) && count($data['customerDetails']) > 0) {
                 $this->ingWebPay->setCustomerDetails($data['customerDetails']);
             }
 
