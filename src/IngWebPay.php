@@ -21,6 +21,7 @@ class IngWebPay
     // Configuration properties
     protected ?string $_username = null;
     protected ?string $_password = null;
+    protected ?string $_email = null;
     protected ?string $_return_url = null;
     protected ?string $_post_action = null;
     protected ?string $_order_status = null;
@@ -130,6 +131,20 @@ class IngWebPay
     public function setOrder(string $order): void
     {
         $this->_order = $order;
+    }
+
+    /**
+     * Sets the email address for the order.
+     *
+     * This method sanitizes the provided email address by removing any invalid characters
+     * and ensuring it is in a valid format. It uses PHP's filter_var function with
+     * FILTER_SANITIZE_EMAIL to clean the input.
+     *
+     * @param string $email Email address associated with the order.
+     * @return void
+     */
+    public function setEmail(string $email): void {
+        $this->_email = filter_var($email, FILTER_SANITIZE_EMAIL);
     }
 
     /**
@@ -417,17 +432,23 @@ class IngWebPay
      */
     public function getPostFields(): array
     {
-        return [
+        $fields = [
             'userName'     => $this->_username,
             'password'     => $this->_password,
             'currency'     => $this->_currency,
             'description'  => $this->_description,
+            'email'        => $this->_email,
             'amount'       => $this->_amount,
             'returnUrl'    => $this->_return_url,
             'language'     => $this->_language,
-            'jsonParams'   => $this->_jsonParams,
-            'orderBundle'  => $this->_orderBundle,
+            'jsonParams'   => $this->_jsonParams
         ];
+
+        if (!is_null($this->_orderBundle)) {
+            $fields['orderBundle'] = $this->_orderBundle;
+        }
+
+        return $fields;
     }
 
     /**

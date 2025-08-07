@@ -40,6 +40,7 @@ class IngWebPayGateway
             $this->ingWebPay->setAmount($data['amount']);
             $this->ingWebPay->setCurrency($data['currency']);
             $this->ingWebPay->setDescription($data['description'] ?? '');
+            $this->ingWebPay->setEmail($data['email']);
 
             // Set customer details if provided
             if (isset($data['customerDetails']) && count($data['customerDetails']) > 0) {

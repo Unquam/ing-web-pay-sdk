@@ -101,11 +101,14 @@ use Unquam\IngWebPaySdk\IngWebPayGateway;
 
 $gateway = new IngWebPayGateway();
 
+// The customerDetails parameter is optional. If you don’t need to include billing or contact information, you can omit it entirely from the request.
+
 $response = $gateway->initializePayment([
     'order' => 'ORDER123',
     'amount' => 100.00,
     'currency' => '946', // RON currency code
     'description' => 'Order #ORDER123',
+    'email' => 'customer@example.com',
     'customerDetails' => [
         'email' => 'customer@example.com',
         'phone' => '40712345678',
