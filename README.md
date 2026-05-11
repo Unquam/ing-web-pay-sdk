@@ -1,7 +1,7 @@
 # IngWebPay SDK for PHP
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](...)
-[![Packagist Version](https://img.shields.io/packagist/v/unquam/ing-web-pay-sdk)](...)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Packagist Version](https://img.shields.io/packagist/v/unquam/ing-web-pay-sdk)](https://packagist.org/packages/unquam/ing-web-pay-sdk)
 
 ![ING Logo](https://ing.ro/dam/ingro/images/logo.svg)
 
